@@ -43,23 +43,10 @@ namespace RPS.Test
     [TestMethod]
     public void GetWinner_ReturnsWinner_String()
     {
-      string hand1 = "rock";
-      string hand2 = "scissors";
+      string hand1 = "scissors";
+      string hand2 = "paper";
       Round newRound = new Round(hand1, hand2);
       Assert.AreEqual(true, newRound.GetWinner(hand1, hand2));
     }
   }
 }
-
-
-
-// ## Specs
-// Game Class
-// Round Constructor creates instance of Round XXXX
-
-// Round object holds player 1 hand
-// Round object holds player 2 hand
-
-// SetHand stores player hand in Round object
-
-// CheckWin method determines winner of round
